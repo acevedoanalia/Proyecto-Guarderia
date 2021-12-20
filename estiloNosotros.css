@@ -1,0 +1,292 @@
+body{
+    background-image: url(verde.jpg);
+}
+
+*{
+    Margin:10;
+    padding:10;
+    box-sizing: border-box;
+ }
+
+
+.padreNosotros{
+  
+    height: 928px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns:3fr;
+    grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
+    gap: 5px;
+    grid-template-areas: 
+    "header header" 
+    "txtNosotros txtNosotros"
+    "alingImg1 alingImg1" 
+    "alingImg2 alingImg2" 
+    "footerIndex footerIndex";
+    justify-content: center;
+    justify-items: center;
+   
+}
+
+header{
+    grid-area: header;
+
+}
+li {
+    text-align: right;
+    color: snow;
+    font-family: 'Hind Madurai', sans-serif;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+a{
+    text-decoration:none;
+    border-radius: 4px;
+}
+
+.alingImg1{
+    grid-area: alingImg1;
+    text-decoration: none;
+    color: snow;
+    font-family: 'Hind Madurai', sans-serif;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    height: 320px;
+   
+}
+.alingImg2{
+    grid-area: alingImg2;
+    text-decoration: none;
+    text-align: right;
+    color: snow;
+    font-family: 'Hind Madurai', sans-serif;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    height: 320px;
+   
+}
+
+.alingParr{
+    text-decoration: none;
+    text-align: left;
+    color: snow;
+    font-family: 'Hind Madurai', sans-serif;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+
+    font-size: 15;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    width: 650px;
+    height: 650px;
+   
+}
+
+
+.txtNosotros{
+    grid-area: txtNosotros;
+    color: white;
+    font-size:10px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: center;
+}
+
+
+
+.titulo1{
+color:white;
+font-size:30px;
+font-family: 'Hind Madurai', sans-serif;
+
+}
+.txtDescr{
+
+color: cornsilk;
+font-size:18px;
+font-family: 'Hind Madurai', sans-serif;
+
+
+}
+
+.footerIndex{
+    grid-area: footerIndex;
+    font-size: 10px;
+    width: 750px;
+    height: 10px;
+
+}
+
+@media only screen and  (min-width: 800px){
+
+    *{
+        Margin:0;
+        padding:0;
+        box-sizing: border-box;
+     }
+     header{
+        grid-area: header;
+    
+    }
+    .padreNosotros{
+  
+            height: 100%;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: 2fr 5fr;
+            grid-template-rows: 0.5fr 5.5fr 5fr 0.5fr;
+            gap: 10px;
+            grid-template-areas: 
+            "header header" 
+            "alingImg1 txtNosotros"
+            "alingImg2 txtNosotros"
+            "footerIndex footerIndex";
+            justify-content: center;
+            align-items: end;
+
+           
+    }
+         li {
+            text-align: right;
+            color:white;
+            font-family: 'Hind Madurai', sans-serif;
+            font-size: 35px;
+            display: inline-block;
+            align-items: center;
+            margin: 5px;
+            padding: 5px;
+          }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        
+        
+        }
+        a{
+            text-decoration:none;
+            font-size: 30px;
+            border-radius: 5px;
+            color: white;
+            border: solid black;
+           background-color: green;
+        }
+        a:hover{
+            text-decoration:none;
+            font-size: 35px;
+            border-radius: 5px;
+            color: white;
+           background-color:chartreuse;
+        }
+        
+        .liIcon{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        
+            text-decoration: none;
+            text-align: right;
+            color: snow;
+            font-family: 'Hind Madurai', sans-serif;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+           
+        }
+   
+        .txtNosotros{
+            grid-area: txtNosotros;
+            color: white;
+            font-size:18px;
+            font-family: 'Hind Madurai', sans-serif;
+            text-align: left;
+     
+            display: flex;
+            width: 850px;
+      
+
+        }
+
+    
+        .titulo1{
+            color: white;
+            font-size:30px;
+            font-family: 'Hind Madurai', sans-serif;
+            text-align: center;
+           
+        }
+
+    
+        .txtDescr{
+            
+            color: black;
+            font-size:18px;
+            font-family: 'Hind Madurai', sans-serif;
+            text-align: center;
+        }
+    
+        .titPrincipal{
+               
+                font-size: 45px;
+                text-align: center;
+                color:black;
+                margin: 20px;
+                padding: 10px;
+                width: 250px;
+                height: 200px;
+                position: absolute;
+                top: 180px;
+                left: 900px;
+                
+        }
+        .alingImg1{
+            grid-area: alingImg1;
+            text-decoration: none;
+            text-align: right;
+            color: snow;
+            font-family: 'Hind Madurai', sans-serif;
+            display: inline-block;
+            margin: 2px;
+            padding: 5px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 250px;
+            height: 320px;
+           
+        }
+        .alingImg2{
+            grid-area: alingImg2;
+            text-decoration: none;
+            text-align: right;
+            color: snow;
+            font-family: 'Hind Madurai', sans-serif;
+            display: inline-block;
+            margin: 2px;
+            padding: 5px;
+            position: absolute;
+            top: 490px;
+            left: 100px;
+            width: 250px;
+            height: 320px;
+           
+        }
+
+        .footerIndex{
+                grid-area: footerIndex;
+                width: 1750px;
+                height: 40px;
+                font-size: 15px;
+                position: absolute;
+                top: 900px;
+                left: 10px;
+            
+        }
+     
+}

@@ -1,0 +1,155 @@
+* {
+    Margin:10;
+    padding:10;
+    box-sizing: border-box;
+ }
+
+ .txtContact{
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: center;
+}
+
+.formulario{
+    
+    background-image: linear-gradient(to top, green, snow);
+  
+    grid-area: formulario;
+    font-size: 20px;
+    width: 400px;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+ 
+}
+
+
+.padreContacto{
+
+    height: 928px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns:3fr;
+    grid-template-rows: 0.5fr 1fr 2fr 7fr 0.5fr;
+    gap: 5px;
+    grid-template-areas: 
+    "header" 
+    "txtContact"
+    "formulario"
+    "map"
+    "footerIndex";
+    justify-content: center;
+    justify-items: center;
+
+
+
+}
+
+header{
+    grid-area: header;
+
+}
+
+a{
+    text-decoration:none;
+    border-radius: 5px;
+  
+}
+
+
+.map{
+    grid-area: map;
+   
+}
+.titulo1{
+  
+font-size:30px;
+font-family: 'Hind Madurai', sans-serif;
+}
+
+.footerIndex{
+    grid-area: footerIndex;
+    font-size: 10px;
+    width: 800px;
+    height: 10px;
+}
+
+@media only screen and  (min-width: 800px){
+
+* {
+    Margin:10;
+    padding:10;
+    box-sizing: border-box;
+ }
+
+ .txtContact{
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.formulario{
+    
+    background-image: linear-gradient(to top, green, snow);
+  
+    grid-area: formulario;
+    font-size: 25px;
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+    padding: 80px;
+    text-align: center;
+ 
+}
+
+
+.padreContacto{
+
+    height: 928px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    grid-template-rows: 0.5fr 1fr 5fr 0.5fr;
+    gap: 5px;
+    grid-template-areas: 
+    "header header" 
+    "txtContact txtContact"
+    "formulario map"
+    "footerIndex footerIndex";
+}
+
+header{
+    grid-area: header;
+
+}
+
+a{
+    text-decoration:none;
+    border-radius: 5px;
+  
+}
+
+
+.map{
+    grid-area: map;
+   
+}
+.titulo1{
+  
+font-size:30px;
+font-family: 'Hind Madurai', sans-serif;
+}
+
+.footerIndex{
+    grid-area: footerIndex;
+    font-size: 10px;
+    width: 1750px;
+    height: 10px;
+}
+}
