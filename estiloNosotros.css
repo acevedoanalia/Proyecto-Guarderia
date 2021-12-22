@@ -55,6 +55,13 @@ a{
     padding: 5px;
     width: 250px;
     height: 320px;
+
+
+    animation-name: movimiento;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 1s;
    
 }
 .alingImg2{
@@ -69,6 +76,20 @@ a{
     width: 250px;
     height: 320px;
    
+    animation-name: movimiento;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes movimiento {
+
+    0%{ transform: rotate(3deg);}
+   25%{transform: rotate(-3deg); }
+   50%{transform: rotate(3deg);}
+   75%{ transform: rotate(-3deg)}
+   100%{transform: rotate(3deg)}
 }
 
 .alingParr{

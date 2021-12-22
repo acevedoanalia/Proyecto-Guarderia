@@ -37,7 +37,7 @@ a:hover{
     font-size: 15px;
     border-radius: 5px;
     color: white;
-   background-color:pink;
+    background-image: linear-gradient(to top, green, snow);
 }
 
 .liIcon{
@@ -136,10 +136,12 @@ header{
 }
 
 .titulo1{
-color: black;
+color: blue;
 font-size:18px;
 font-family: 'Hind Madurai', sans-serif;
 text-align: center;
+
+
 
 }
 .txtDescr{
@@ -163,7 +165,24 @@ text-align: center;
     position: absolute;
     top: 160px;
     left: 530px;
+
+    animation: titPrincipal;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
 }
+
+@keyframes titPrincipal {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 .footerIndex{
     grid-area: footerIndex;
     font-size: 10px;
@@ -240,7 +259,7 @@ text-align: center;
             font-size: 35px;
             border-radius: 5px;
             color: white;
-           background-color:chartreuse;
+           background-image: linear-gradient(to top, green, snow);
         }
         
         .liIcon{

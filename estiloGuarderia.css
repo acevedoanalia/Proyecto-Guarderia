@@ -32,7 +32,6 @@ body{
  }
 
  .padreGuarderia{
-  
     height: 928px;
     margin: 10px auto;
     display: grid;
@@ -47,7 +46,10 @@ body{
     "footerIndex footerIndex footerIndex";
     justify-content: center;
     justify-items: center;
-   
+
+}
+header{
+    grid-area: header;
 }
  
 a{
@@ -56,52 +58,62 @@ a{
 }
 
 .alingImg1{
+    grid-area: alingImg1;
     text-decoration: none;
     text-align: right;
     color: snow;
     font-family: 'Hind Madurai', sans-serif;
-    display: inline-block;
     margin: 5px;
     padding: 5px;
-    position: absolute;
-    top: 500px;
-    left: 120px;
     width: 200px;
     height: 200px;
-   
 }
+.alingImg1:hover{
+transform: scale(2,2);
+
+
+}
+
+.alingImg2:hover{
+    transform: scale(2,2);
+    
+ }
+
+.alingImg3:hover{
+        transform: scale(2,2);
+ }
+
+
 .alingImg2{
+    grid-area: alingImg2;
     text-decoration: none;
     text-align: right;
+
     color: snow;
     font-family: 'Hind Madurai', sans-serif;
-    display: inline-block;
+
     margin: 5px;
     padding: 5px;
-    position: absolute;
-    top: 500px;
-    left: 470px;
     width: 200px;
     height: 200px;
    
 }
 .alingImg3{
+    grid-area: alingImg3;
     text-decoration: none;
     text-align: right;
     color: white;
     font-family: 'Hind Madurai', sans-serif;
-    display: inline-block;
     margin: 5px;
     padding: 5px;
-    position: absolute;
-    top: 500px;
-    left: 820px;
     width: 200px;
     height: 200px;
    
 }
 
+
 .titulo1{
+grid-area: titulo1;
 color:white;
 font-size:30px;
 font-family: 'Hind Madurai', sans-serif;
@@ -109,19 +121,34 @@ font-family: 'Hind Madurai', sans-serif;
 }
 
 .tituloGal{
+    grid-area: tituloGal;
     color:black;
     font-size:30px;
     font-family: 'Hind Madurai', sans-serif;
+    animation: tituloGal;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
     }
-.txtDescr{
 
+@keyframes tituloGal {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+.txtDescr{
+grid-area: txtDescr;
 color: cornsilk;
 font-size:18px;
 font-family: 'Hind Madurai', sans-serif;
 text-align: center;
-width: 850px;
-height: 350px;
-
 
 }
 
