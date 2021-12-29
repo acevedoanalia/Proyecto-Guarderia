@@ -16,10 +16,67 @@
     "footerIndex";
     justify-content: center;
     justify-items: center;
-   
 }
 
-@media only screen and  (min-width: 800px){
+.txtDescr{
+    grid-area: txtDescr;
+    color: cornsilk;
+    font-size:15px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: center;
+    width: 500px;
+}
+.alingImg1{
+    grid-area: alingImg1;
+    text-decoration: none;
+    display: block;
+    color: snow;
+    font-family: 'Hind Madurai', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    width: 380px;
+    height: 200px;
+}
+.alingImg2{
+    grid-area: alingImg2;
+    text-decoration: none;
+    display: block;
+    color: snow;
+    font-family: 'Hind Madurai', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    width: 380px;
+    height: 200px;
+   
+}
+.alingImg3{
+    grid-area: alingImg3;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: 'Hind Madurai', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    width: 380px;
+    height: 200px;
+   
+}
+.alingImg1:hover{
+    transform: scale(2,2);
+}   
+.alingImg2:hover{
+transform: scale(2,2);
+}    
+.alingImg3:hover{
+   transform: scale(2,2);
+}
+
+.footerIndex{
+    width: 750px;
+    height: 70px;
+
+}
+@media only screen and  (min-width: 768px){
 
 body{
     background-image: url(verde.jpg);
@@ -68,22 +125,6 @@ a{
     width: 200px;
     height: 200px;
 }
-.alingImg1:hover{
-transform: scale(2,2);
-
-
-}
-
-.alingImg2:hover{
-    transform: scale(2,2);
-    
- }
-
-.alingImg3:hover{
-        transform: scale(2,2);
- }
-
-
 .alingImg2{
     grid-area: alingImg2;
     text-decoration: none;
@@ -110,7 +151,15 @@ transform: scale(2,2);
     height: 200px;
    
 }
-
+.alingImg1:hover{
+    transform: scale(2,2);
+}   
+.alingImg2:hover{
+transform: scale(2,2);
+}    
+.alingImg3:hover{
+   transform: scale(2,2);
+}
 
 .titulo1{
 grid-area: titulo1;
@@ -149,7 +198,7 @@ color: cornsilk;
 font-size:18px;
 font-family: 'Hind Madurai', sans-serif;
 text-align: center;
-
+width: 1200px;
 }
 
 .footerIndex{

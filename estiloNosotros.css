@@ -14,15 +14,15 @@ body{
     height: 928px;
     margin: 10px auto;
     display: grid;
-    grid-template-columns:3fr;
+    grid-template-columns:2fr;
     grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
     gap: 5px;
     grid-template-areas: 
-    "header header" 
-    "txtNosotros txtNosotros"
-    "alingImg1 alingImg1" 
-    "alingImg2 alingImg2" 
-    "footerIndex footerIndex";
+    "header" 
+    "txtNosotros"
+    "alingImg1" 
+    "alingImg2" 
+    "footerIndex";
     justify-content: center;
     justify-items: center;
    
@@ -53,8 +53,8 @@ a{
     display: block;
     margin: 5px;
     padding: 5px;
-    width: 250px;
-    height: 320px;
+    width: 400px;
+    height: 600px;
 
 
     animation-name: movimiento;
@@ -73,8 +73,8 @@ a{
     display: block;
     margin: 5px;
     padding: 5px;
-    width: 250px;
-    height: 320px;
+    width: 400px;
+    height: 600px;
    
     animation-name: movimiento;
     animation-iteration-count: infinite;
@@ -139,12 +139,12 @@ font-family: 'Hind Madurai', sans-serif;
 .footerIndex{
     grid-area: footerIndex;
     font-size: 10px;
-    width: 750px;
+    width: 450px;
     height: 10px;
 
 }
 
-@media only screen and  (min-width: 800px){
+@media only screen and  (min-width: 768px){
 
     *{
         Margin:0;

@@ -14,7 +14,7 @@ body{
     margin: 10px auto;
     display: grid;
     grid-template-columns:3fr;
-    grid-template-rows: 0.5fr 1fr 1fr 2fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 5fr 2fr 2fr 0.5fr;
     gap: 5px;
     grid-template-areas: 
     "header" 
@@ -23,7 +23,8 @@ body{
     "alingImg1"
     "alingImg2"
     "footerIndex";
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     justify-items: center;
 }
 header{
@@ -35,7 +36,7 @@ header{
     text-align: left;
     color:white;
     font-family: 'Hind Madurai', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     margin: 5px;
     padding: 5px;
   }
@@ -44,9 +45,8 @@ header{
     grid-area: itemsTarifas;
     margin: 5px;
     padding: 5px;
-    width: 450px;
-    height: 200px;
-
+    width: 600px;
+    height: 280px;
 }
 
   li {
@@ -62,7 +62,9 @@ header{
     display: block;
     flex-direction: row;
     justify-content: space-around;
-    text-align: left;
+    text-align: center;
+    background-image: linear-gradient(to top, green, rgb(56, 245, 39), rgb(4, 82, 4) );
+    width: 580px;
 
 }
 a{
@@ -95,8 +97,8 @@ a{
     display: block;
     margin: 5px;
     padding: 5px;
-    width: 250px;
-    height: 320px;
+    width: 400px;
+  
    
 }
 .alingImg2{
@@ -108,8 +110,7 @@ a{
     display: block;
     margin: 5px;
     padding: 5px;
-    width: 250px;
-    height: 320px;
+    width: 400px;
    
 }
 .titulo1{
@@ -121,8 +122,9 @@ font-family: 'Hind Madurai', sans-serif;
 .txtDescrTarifas{
 grid-area: txtDescrTarifas;
 color: white;
-font-size:15px;
+font-size:18px;
 font-family: 'Hind Madurai', sans-serif;
+width: 500px;
 
 }
 
@@ -132,12 +134,6 @@ font-family: 'Hind Madurai', sans-serif;
     width: 750px;
     height: 10px;
 }
-
-
-
-
-
-
 
 
 @media only screen and  (min-width: 800px){
@@ -166,6 +162,7 @@ body{
     "alingImg2 itemsTarifas"
     "footerIndex footerIndex";
     align-items: center;
+    justify-content: center;
    
    
 }
@@ -237,12 +234,6 @@ a:hover{
     padding: 5px;
    
 }
-
-
-
-
-
-
 .alingImg1{
     grid-area: alingImg1;
     text-decoration: none;
@@ -252,12 +243,8 @@ a:hover{
     display: inline-block;
     margin: 5px;
     padding: 5px;
-    position: absolute;
-    top: 110px;
-    left: 100px;
     width: 250px;
-    height: 320px;
-   
+    height: 320px; 
 }
 .alingImg2{
     grid-area: alingImg2;
@@ -268,9 +255,6 @@ a:hover{
     display: inline-block;
     margin: 5px;
     padding: 5px;
-    position: absolute;
-    top: 500px;
-    left: 100px;
     width: 250px;
     height: 320px;
    
@@ -284,14 +268,12 @@ a:hover{
     display: inline-block;
     margin: 15px;
     padding: 15px;
-
     font-size: 15;
     position: absolute;
     top: 100px;
     left: 500px;
     width: 650px;
     height: 650px;
-   
 }
 
 
@@ -308,8 +290,7 @@ font-size:26px;
 font-family: 'Hind Madurai', sans-serif;
 width: 650px;
 height: 250px;
-
-
+text-align: left;
 }
 
 .footerIndex{
@@ -319,5 +300,4 @@ height: 250px;
     width: 1750px;
     height: 55px;
 }
-
 }
