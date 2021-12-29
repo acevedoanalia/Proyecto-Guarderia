@@ -11,6 +11,7 @@
     padding: 10px;
     font-family: 'Hind Madurai', sans-serif;
     text-align: center;
+    width: 550px;
 }
 
 .formulario{
@@ -73,7 +74,7 @@ font-family: 'Hind Madurai', sans-serif;
 .footerIndex{
     grid-area: footerIndex;
     font-size: 10px;
-    width: 800px;
+    width: 700px;
     height: 10px;
 }
 

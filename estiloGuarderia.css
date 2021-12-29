@@ -17,7 +17,28 @@
     justify-content: center;
     justify-items: center;
 }
+.tituloGal{
+    grid-area: tituloGal;
+    color:black;
+    font-size:20px;
+    font-family: 'Hind Madurai', sans-serif;
+    animation: tituloGal;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    }
 
+@keyframes tituloGal {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
 .txtDescr{
     grid-area: txtDescr;
     color: cornsilk;
@@ -122,21 +143,17 @@ a{
     font-family: 'Hind Madurai', sans-serif;
     margin: 5px;
     padding: 5px;
-    width: 200px;
-    height: 200px;
+    width: 400px;
 }
 .alingImg2{
     grid-area: alingImg2;
     text-decoration: none;
     text-align: right;
-
     color: snow;
     font-family: 'Hind Madurai', sans-serif;
-
     margin: 5px;
     padding: 5px;
-    width: 200px;
-    height: 200px;
+    width: 400px;
    
 }
 .alingImg3{
@@ -147,9 +164,7 @@ a{
     font-family: 'Hind Madurai', sans-serif;
     margin: 5px;
     padding: 5px;
-    width: 200px;
-    height: 200px;
-   
+    width: 400px;
 }
 .alingImg1:hover{
     transform: scale(2,2);
@@ -209,5 +224,4 @@ width: 1200px;
     height: 70px;
 
 }
-
 }
