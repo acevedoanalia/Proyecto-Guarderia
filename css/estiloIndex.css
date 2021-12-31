@@ -1,0 +1,265 @@
+body {
+  background-image: url(/css/verde.jpg); }
+
+* {
+  Margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  text-align: right;
+  color: white;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 10px;
+  display: inline-block;
+  margin: 2px;
+  padding: 2px; }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 15px; }
+
+a {
+  text-decoration: none;
+  font-size: 10px;
+  border-radius: 3px;
+  color: white;
+  border: solid black;
+  background-color: green; }
+
+a:hover {
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 5px;
+  color: white;
+  background-image: linear-gradient(to top, green, snow); }
+
+.liIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+  text-align: right;
+  color: snow;
+  font-family: 'Hind Madurai', sans-serif;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px; }
+
+.padre {
+  height: 928px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 5fr;
+  grid-template-rows: 1fr 2fr 3fr 2fr 0.5fr;
+  gap: 5px;
+  grid-template-areas: "header"  "video"  "map"  "descrip"  "footerIndex";
+  justify-items: center;
+  justify-content: space-around; }
+
+header {
+  grid-area: header; }
+
+.video {
+  grid-area: video;
+  height: 300px;
+  width: 600px; }
+
+.descrip {
+  grid-area: descrip; }
+
+.map {
+  border: solid white;
+  grid-area: map;
+  height: 250px;
+  width: 450px;
+  border: red;
+  text-align: justify; }
+
+.alineacionVideo {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  width: 1300px;
+  height: 600px;
+  position: absolute;
+  top: 100px;
+  left: 1px; }
+
+.article1 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  width: 1810px;
+  height: 160px;
+  position: absolute;
+  top: 700px;
+  left: 5px;
+  font-size: 10px; }
+
+.article2 {
+  text-align: left;
+  margin: 5px;
+  padding: 5px;
+  width: 570px;
+  height: 600px;
+  position: absolute;
+  top: 100px;
+  left: 1250px;
+  font-size: 10px; }
+
+.titulo1 {
+  color: blue;
+  font-size: 18px;
+  font-family: 'Hind Madurai', sans-serif;
+  text-align: center; }
+
+.txtDescr {
+  color: white;
+  font-size: 15px;
+  font-family: 'Hind Madurai', sans-serif;
+  text-align: center; }
+
+.titPrincipal {
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 160px;
+  left: 530px;
+  animation: titPrincipal;
+  animation-iteration-count: infinite;
+  animation-duration: 3s; }
+
+@keyframes titPrincipal {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.footerIndex {
+  grid-area: footerIndex;
+  font-size: 10px;
+  width: 750px;
+  height: 10px; }
+
+.btnReserva {
+  position: absolute;
+  top: 260px;
+  left: 550px;
+  width: 80px;
+  height: 25px;
+  background-color: #08a508;
+  color: snow;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 13px; }
+
+@media only screen and (min-width: 768px) {
+  * {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  .padre {
+    height: 928px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-rows: 0.5fr 4fr 1fr 0.5fr;
+    gap: 5px;
+    grid-template-areas: "header header header"  "video video map" "descrip descrip descrip"  "footerIndex footerIndex footerIndex";
+    justify-items: center; }
+  li {
+    text-align: right;
+    color: white;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 35px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px; }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  a {
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 5px;
+    color: white;
+    border: solid black;
+    background-color: green; }
+  a:hover {
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to top, green, snow); }
+  .liIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    text-align: right;
+    color: snow;
+    font-family: 'Hind Madurai', sans-serif;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px; }
+  .btnReserva {
+    position: absolute;
+    top: 450px;
+    left: 1000px;
+    width: 130px;
+    height: 45px;
+    background-color: #08a508;
+    color: snow;
+    text-decoration: none;
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 30px; }
+  .map {
+    border: solid white;
+    grid-area: map;
+    height: 400px;
+    width: 500px; }
+  .titulo1 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: center; }
+  .txtDescr {
+    color: black;
+    font-size: 18px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: center; }
+  .titPrincipal {
+    font-size: 45px;
+    text-align: center;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: 180px;
+    left: 900px; }
+  .footerIndex {
+    grid-area: footerIndex;
+    width: 1750px;
+    height: 60px;
+    font-size: 15px; }
+  .video {
+    grid-area: video;
+    width: 1300px;
+    height: 600px; } }
