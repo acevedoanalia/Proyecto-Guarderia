@@ -1,3 +1,6 @@
+$oscuro: #000000;
+$claro: #FFFFFF;
+
 body{
     background-image: url(/css/verde.jpg);
 }
@@ -9,7 +12,7 @@ body{
 
  li {
     text-align: right;
-    color:white;
+    color:$claro;
     font-family: 'Hind Madurai', sans-serif;
     font-size: 10px;
     display: inline-block;
@@ -28,7 +31,7 @@ a{
     text-decoration:none;
     font-size: 10px;
     border-radius: 3px;
-    color: white;
+    color: $claro;
     border: solid black;
     background-color: green;
     
@@ -36,7 +39,7 @@ a{
     text-decoration:none;
     font-size: 12px;
     border-radius: 5px;
-    color: white;
+    color: $claro;
     background-image: linear-gradient(to top, green, snow);
     }
 } 
@@ -61,88 +64,47 @@ a{
     
     }
     .titulo1{
-        color: black;
-        font-size:30px;
+        color: $oscuro;
+        font-size:20px;
         font-family: 'Hind Madurai', sans-serif;
         text-align: center; 
     
     }
     .txtDescr{
-        color:cornsilk;
-        font-size:20px;
+        color: $oscuro;
+        font-size:18px;
         font-family: 'Hind Madurai', sans-serif;
         text-align: center;
-    }
-
+        width: 500px;
+        height: 100px;
+        }
+        .txtDescr2{
+            color: $oscuro;
+            font-size:18px;
+            font-family: 'Hind Madurai', sans-serif;
+            text-align: center;
+            width: 1200px;
+            height: 100px;
+            }
 }
-
-
-
+.map{
+    border: solid $claro;
+    grid-area: map;
+    height:250px;
+    width:450px;
+    text-align: justify;
+}
 .video{
     grid-area: video;
     height:300px;
     width:600px;
 }
 
-.descrip{
-    grid-area: descrip;
-}
-
-.map{
-    border: solid white;
-    grid-area: map;
-    height:250px;
-    width:450px;
-    border: red;
-    text-align: justify;
-}
-
-
-.alineacionVideo{
-    text-align: center;
-    margin: 5px;
-    padding: 5px;
-    width: 1300px;
-    height: 600px;
-    position: absolute;
-    top: 100px;
-    left: 1px;
-}
-
-.article1{
-   
-    text-align: center;
-    margin: 5px;
-    padding: 5px;
-    width: 1810px;
-    height: 160px;
-    position: absolute;
-    top: 700px;
-    left: 5px;
-    font-size: 10px;
-  
-}
-
-.article2{
-
-    text-align:left;
-    margin: 5px;
-    padding: 5px;
-    width: 570px;
-    height: 600px;
-    position: absolute;
-    top: 100px;
-    left: 1250px;
-    font-size: 10px;
-}
-
-
-
 .titPrincipal{
    
     font-size: 18px;
     text-align: center;
-    color:black;
+    color:$oscuro;
     margin: 10px;
     padding: 5px;
     width: 100px;
@@ -168,13 +130,7 @@ a{
     }
 }
 
-.footerIndex{
-    grid-area: footerIndex;
-    font-size: 10px;
-    width: 750px;
-    height: 10px;
 
-}
 .btnReserva{
     position: absolute;
     top: 260px;
@@ -182,14 +138,20 @@ a{
     width: 80px;
     height: 25px;
     background-color: rgb(8, 165, 8);
-    color: snow;
+    color: $claro;
     text-decoration: none;
     border-radius: 4px;
     text-align: center;
     font-family: 'Hind Madurai', sans-serif;
     font-size: 13px;
 }
+.footerIndex{
+    grid-area: footerIndex;
+    font-size: 10px;
+    width: 750px;
+    height: 10px;
 
+}
 
 @media only screen and  (min-width: 768px){
 
@@ -213,11 +175,33 @@ a{
             "descrip descrip descrip" 
             "footerIndex footerIndex footerIndex";
             justify-items: center;
-           
+            header{
+                grid-area: header;
+            }
+              
+            .titulo1{
+            color: white;
+            font-size:30px;
+            font-family: 'Hind Madurai', sans-serif;
+            text-align: center;
+            }
+            .txtDescr{
+            color: $oscuro;
+            font-size:18px;
+            font-family: 'Hind Madurai', sans-serif;
+            text-align: center;
+            }
+            .descrip{
+            grid-area: descrip;
+            text-align: center;
+            width: 1200px;
+            height: 100px;
+            
+        }
     }
          li {
             text-align: right;
-            color:white;
+            color:$claro;
             font-family: 'Hind Madurai', sans-serif;
             font-size: 35px;
             display: inline-block;
@@ -229,38 +213,23 @@ a{
             flex-direction: row;
             justify-content: space-around;
         
-        
         }
         a{
             text-decoration:none;
             font-size: 30px;
             border-radius: 5px;
-            color: white;
-            border: solid black;
+            color: $claro;
+            border: solid $oscuro;
            background-color: green;
-        }
-        a:hover{
+           &:hover{
             text-decoration:none;
             font-size: 35px;
             border-radius: 5px;
-            color: white;
+            color: $claro;
            background-image: linear-gradient(to top, green, snow);
         }
-        
-        .liIcon{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        
-            text-decoration: none;
-            text-align: right;
-            color: snow;
-            font-family: 'Hind Madurai', sans-serif;
-            display: inline-block;
-            margin: 5px;
-            padding: 5px;
-           
         }
+       
         .btnReserva{
             position: absolute;
             top: 450px;
@@ -268,7 +237,7 @@ a{
             width: 130px;
             height: 45px;
             background-color: rgb(8, 165, 8);
-            color: snow;
+            color: $claro;
             text-decoration: none;
             border-radius: 12px;
             text-align: center;
@@ -276,34 +245,16 @@ a{
             font-size: 30px;
         }
         .map{
-            border: solid white;
+            border: solid $claro;
             grid-area: map;
             height:400px;
             width:500px;
         }
-    
-    
-        .titulo1{
-            color: white;
-            font-size:30px;
-            font-family: 'Hind Madurai', sans-serif;
-            text-align: center;
-        }
-
-    
-        .txtDescr{
-            
-            color: black;
-            font-size:18px;
-            font-family: 'Hind Madurai', sans-serif;
-            text-align: center;
-        }
-    
         .titPrincipal{
                
                 font-size: 45px;
                 text-align: center;
-                color:black;
+                color: $oscuro;
                 margin: 20px;
                 padding: 10px;
                 width: 250px;
