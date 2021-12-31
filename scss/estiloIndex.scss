@@ -1,5 +1,5 @@
 body{
-    background-image: url(css/verde.jpg);
+    background-image: url(/css/verde.jpg);
 }
 *{
     Margin:0;
@@ -31,31 +31,15 @@ a{
     color: white;
     border: solid black;
     background-color: green;
-} 
-
-
-a:hover{
+    
+    &:hover{
     text-decoration:none;
     font-size: 12px;
     border-radius: 5px;
     color: white;
     background-image: linear-gradient(to top, green, snow);
-}
-
-.liIcon{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    text-decoration: none;
-    text-align: right;
-    color: snow;
-    font-family: 'Hind Madurai', sans-serif;
-    display: inline-block;
-    margin: 5px;
-    padding: 5px;
-   
-}
+    }
+} 
 .padre{
   
     height: 928px;
@@ -72,11 +56,26 @@ a:hover{
     "footerIndex";
     justify-items: center;
     justify-content: space-around;
-}
-header{
-    grid-area: header;
+    header{
+        grid-area: header;
+    
+    }
+    .titulo1{
+        color: black;
+        font-size:30px;
+        font-family: 'Hind Madurai', sans-serif;
+        text-align: center; 
+    
+    }
+    .txtDescr{
+        color:cornsilk;
+        font-size:20px;
+        font-family: 'Hind Madurai', sans-serif;
+        text-align: center;
+    }
 
 }
+
 
 
 .video{
@@ -137,24 +136,8 @@ header{
     font-size: 10px;
 }
 
-.titulo1{
-color: blue;
-font-size:18px;
-font-family: 'Hind Madurai', sans-serif;
-text-align: center;
 
 
-
-}
-.txtDescr{
-
-color: white;
-font-size:15px;
-font-family: 'Hind Madurai', sans-serif;
-text-align: center;
-
-
-}
 .titPrincipal{
    
     font-size: 18px;
