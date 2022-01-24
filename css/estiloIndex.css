@@ -1,5 +1,7 @@
 body {
   background-image: url(/images/fondo.jpg);
+
+
 }
 
 * {
@@ -26,8 +28,7 @@ a {
   text-decoration: none;
   font-size: 10px;
   border-radius: 3px;
-  color: #FFFFFF;
-  background-color: green; }
+  color: #FFFFFF;}
   a:hover {
     text-decoration: none;
     font-size: 12px;
@@ -155,6 +156,7 @@ a {
   align-items: flex-start;
   justify-content: flex-start;
   flex: flex-start;
+ 
   }
 
 .sticky-top {
@@ -164,7 +166,8 @@ a {
 
 }
 .header-color{
-  background-color: blueviolet;
+  background-image: linear-gradient(to top, rgb(77, 0, 128), rgb(187, 39, 245), rgb(153, 126, 216) );
+ 
 }
 
 header {
@@ -174,6 +177,8 @@ header {
       display: block;
       align-content: center;
       justify-content: center;
+      align-items: center;
+     
 }
 
 main{
@@ -183,7 +188,7 @@ main{
 
 .titulo1 {
       color: blueviolet;
-      font-size: 30px;
+      font-size: 35px;
       font-family: "Roboto Slab", serif;
       text-align: center;
 
@@ -194,6 +199,7 @@ main{
       font-size: 20px;
       font-family: "Roboto Slab", serif;
       text-align: center; 
+      opacity: 1;
 }
 
  .descrip {
@@ -201,9 +207,9 @@ main{
       text-align: center;
       font-family: "Roboto Slab", serif;
       text-align: center; 
-      text-transform: uppercase;
       font-size: 10px;
       background-color: snow;;
+      opacity: 1;
 
 }
 
@@ -214,12 +220,14 @@ main{
     font-family: "Roboto Slab", serif;
     font-weight: 200;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     margin: 5px;
     padding: 5px;
     justify-content: center; 
   align-content: center;
+  opacity: 1;
+
 }
 
 
@@ -227,30 +235,73 @@ main{
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content:center; }
+    justify-content:center;
+  padding: 1%;
+  margin: 1px;
+    width: 900px;
+    height: 80px;
+    opacity: 1;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  flex-direction: row;
+  width: 1800px;
+  height: 90px;
+  padding: 5px;
+  margin: 3px;
+  opacity: 1;
+}
   a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     color: #FFFFFF;
-    background-color: rgb(164, 13, 194); }
+    border-color: solid black;
+    opacity: 1;
+  
+   }
     a:hover {
       text-decoration: none;
-      font-size: 30px;
+      font-size: 27px;
       border-radius: 5px;
       color: #FFFFFF;
-      background-image: linear-gradient(to top, rgb(221, 18, 211), snow); }
+      background-image: linear-gradient(to top, rgb(77, 0, 128), rgb(187, 39, 245), rgb(153, 126, 216) ); }
   .btnReserva {
     position: absolute;
     top: 450px;
     left: 1000px;
     width: 130px;
     height: 45px;
-    background-color: rgb(164, 13, 194);
+    background-image: linear-gradient(to top, rgb(77, 0, 128), rgb(187, 39, 245), rgb(153, 126, 216) );
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
     font-family: 'Hind Madurai', sans-serif;
-    font-size: 25px;
+    font-size: 26px;
+    opacity: 1;
+}
+
+.titPrincipal {
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 160px;
+  left: 950px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  animation: titPrincipal;
+  font-family: "Roboto Slab", serif;
+  animation-iteration-count: infinite;
+  animation-duration: 5s; 
 }
 .fotos{
   width: 500px;
@@ -260,6 +311,7 @@ main{
   align-items: center;
   padding: 2%;
   display: flex;
+  opacity: 1;
   
 }
 .imgAni{
@@ -273,6 +325,8 @@ main{
   background-size: cover;
   background-position: center;
   background-color: solid snow;
+
+  opacity: 1;
 }
   .footerIndex {
     grid-area: footerIndex;
@@ -280,6 +334,7 @@ main{
 
     font-size: 15px; 
     background-color: white;
+  
   }
   .footerUbicacion {
     width: 100%;
@@ -290,7 +345,7 @@ main{
     padding: 1%;
     justify-content: center;
     text-transform: uppercase;
-    background-color: blueviolet;
+    background-image: linear-gradient(to top, rgb(77, 0, 128), rgb(187, 39, 245), rgb(153, 126, 216) );
   }
   .footerDerecho {
     width: 100%;
@@ -301,17 +356,18 @@ main{
     grid-area: video;
     width: 1300px;
     height: 650px;
+ 
 } 
 .social-bar{
-        position: fixed;
-        top : 25px;
-        left: 75%;
+        display: flex;
         font-size: 0.5rem;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-evenly;
         width: 160px;
-        height: 60px;
+        height: 80px;
+        padding: 1%;
+        margin: 2px;
 }
     .icon{
      

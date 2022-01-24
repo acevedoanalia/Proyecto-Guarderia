@@ -16,7 +16,7 @@
 
 .formulario{
     
-    background-image: linear-gradient(to top, green, rgb(56, 245, 39), rgb(4, 82, 4) );
+    background-image: linear-gradient(to top, rgb(77, 0, 128), rgb(187, 39, 245), rgb(153, 126, 216) );
     grid-area: formulario;
     font-size: 20px;
     width: 450px;
@@ -79,7 +79,9 @@ font-family: 'Hind Madurai', sans-serif;
 }
 
 @media only screen and  (min-width: 800px){
-
+    body {
+        background-image: url(/images/fondo.jpg);
+      }
 * {
     Margin:10;
     padding:10;
@@ -96,7 +98,7 @@ font-family: 'Hind Madurai', sans-serif;
 
 .formulario{
     
-    background-image: linear-gradient(to top, green, rgb(56, 245, 39), rgb(4, 82, 4) );
+    background-image: linear-gradient(to top, rgb(77, 0, 128), rgb(187, 39, 245), rgb(153, 126, 216) );
     grid-area: formulario;
     font-size: 20px;
     font-family: 'Hind Madurai', sans-serif;

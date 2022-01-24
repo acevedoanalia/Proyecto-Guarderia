@@ -1,5 +1,6 @@
 body {
-    background-image: url(./images/fondo.jpg)
+    background-image: url(/images/fondo.jpg);
+
   }
 
 *{
@@ -177,7 +178,7 @@ font-family: 'Hind Madurai', sans-serif;
             text-align: right;
             color:white;
             font-family: 'Hind Madurai', sans-serif;
-            font-size: 35px;
+            font-size: 25px;
             display: inline-block;
             align-items: center;
             margin: 5px;
@@ -192,17 +193,17 @@ font-family: 'Hind Madurai', sans-serif;
         }
         a{
             text-decoration:none;
-            font-size: 30px;
+            font-size: 25px;
             border-radius: 5px;
             color: white;
-           background-color: green;
+          
         }
         a:hover{
             text-decoration:none;
-            font-size: 35px;
+            font-size: 25px;
             border-radius: 5px;
             color: white;
-           background-color:chartreuse;
+       
         }
         
         .liIcon{
