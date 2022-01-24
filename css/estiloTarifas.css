@@ -1,5 +1,5 @@
 body{
-    background-image: url(verde.jpg);
+    background-color: rgb(255, 233, 233);
 }
 
 *{
@@ -209,7 +209,6 @@ a{
     font-size: 30px;
     border-radius: 5px;
     color: white;
-    border: solid black;
    background-color: green;
 }
 a:hover{

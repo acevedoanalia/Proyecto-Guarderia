@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Explora&family=Great+Vibes&family=Hind+Madurai:wght@300&family=Niconne&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/font.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -16,51 +16,61 @@
     <title>Proyecto Guarderia</title>
   
 </head>
-<body>
-<div class="padre">
 
-    <header class="header">
-            <h1>  
+<body class="position-relative">
+
+        <header class="sticky-top header header-color">
+           <div>
                 <ul>
-
                     <li>Apocalypto</li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="guarderia.html">La guarderia</a></li>
                     <li><a href="tarifas.html">Tarifas</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="https://www.facebook.com">facebook</a></li>
-                    <li><a href="https://www.instagram.com">instagram</a></li>
-                    <li><a href="https://www.whatsapp.com">whatsapp</a></li>
                 </ul>
-            </h1>
-    </header>
-         
-            <section> 
-                    <h3>
-                        <p class="titulo1">Encontranos en Lanús, Buenos Aires </p>
-                        <p class="txtDescr"> Estamos en la ciudad de Remedios de Escala, partido de Lanús, Buenos Aires. A muy pocas cuadras del hospital. Transportes que podes utilizar: Linea 33, Tren Linea Roca</p>
-                    </h3>
-                    <div  class="map">
-                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d975.3139591401933!2d-58.390877215250335!3d-34.691253495939236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccdce6e267df%3A0xbde27cf390ac9a8f!2sCDS%2C%20Av.%20Remedios%20de%20Escalada%20de%20San%20Mart%C3%ADn%20666%2C%20B1823%20Lan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1638335142407!5m2!1ses!2sar" width="350" height="350" style="border:1px;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class ="social-bar">                
+                     <a href="https://www.facebook.com/" class="icon icon-facebook2"></a>
+                     <a href="https://www.instagram.com/" class="icon icon-instagram"></a>
+                      <a href="https://www.facebook.com/" class="icon icon-whatsapp"></a>
                     </div>
-            </section>
+            </div>
+        </header>
+
             <section class="video">
-                <video class="video" src="video.MP4" width="300" height="180" controls autoplay loop muted>video</video>
+                <video class="video" src="video.MP4" width="1900px" height="800px" autoplay loop muted>video</video>
                 <a class="btnReserva" href="https://www.whatsapp.com/">Reservar</a>
                 <p class="titPrincipal">Guardería y SPA Apocalypto</p>
             </section>
             <section  class="descrip">
-            <h3>
+          
                 <p class="titulo1">Dejá que tu gato disfrute de la comodidad de unas lindas vacaciones</p>
-                <p class="txtDescr2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi neque, posuere sed laoreet eu, vehicula nec orci. Suspendisse nec lectus quam. Nam quis nunc id ante viverra fringilla tristique ac ligula. Suspendisse vel bibendum neque. Aenean cursus, felis a efficitur ultricies, urna lectus cursus leo, nec cursus dui nunc non diam. In faucibus turpis id lacus ornare sagittis. Cras suscipit a mauris quis rutrum. Proin eu dui in magna rhoncus consectetur sit amet ut quam. Fusce at massa est. Vestibulum interdum nec lacus a pretium.</p>
-            </h3>
+        
+                <p class="txtDescr"> Sabemos lo que significa dejar a tu querido minino al cuidado de desconocidos o en un lugar no preparado para felinos... Por eso ofrecemos no sólo un "Hotel Felino de 5 estrellas" sino también cariño y atención a las necesidades de cada huésped con bigotes en particular, con una anfitriona médica veterinaria.</p>
+            
         </section>
-    
-    <footer  class="footerIndex">
-        <hr>
-            <h4>© 2021 Derechos reservados. Creado por Analia Acevedo</h4>
+        <section class= "fotos">
+
+            <div>
+                <img  class="imgAni" src="images/diversion.jpg" width="420px" alt="Foto"/>
+            </div>
+            <div>
+                <img  class="imgAni" src="images/gatos.jpg" width="420px" alt="Foto"/>
+            </div>
+            <div>
+                <img  class="imgAni" src="images/cuidado.jpg" width="420px" alt="Foto"/>
+            </div>
+
+        </section>
+
+ <footer  class="footerIndex">
+    <div class= "footerUbicacion">
+        <p>Remedios de Escalada, Lanús, Buenos Aires</p>
+
+    </div>   
+    <div class ="footerDerechos txtDescr">
+        <p>© 2021 Derechos reservados. Creado por Analia Acevedo<p>
+    </div>
     </footer>
 
-</div>
 </body>
 </html>

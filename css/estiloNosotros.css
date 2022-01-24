@@ -1,6 +1,6 @@
-body{
-    background-image: url(verde.jpg);
-}
+body {
+    background-image: url(./images/fondo.jpg)
+  }
 
 *{
     Margin:10;
@@ -145,7 +145,7 @@ font-family: 'Hind Madurai', sans-serif;
 }
 
 @media only screen and  (min-width: 768px){
-
+   
     *{
         Margin:0;
         padding:0;
@@ -195,7 +195,6 @@ font-family: 'Hind Madurai', sans-serif;
             font-size: 30px;
             border-radius: 5px;
             color: white;
-            border: solid black;
            background-color: green;
         }
         a:hover{

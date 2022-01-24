@@ -1,5 +1,6 @@
 body {
-  background-image: url(/css/verde.jpg); }
+  background-image: url(/images/fondo.jpg);
+}
 
 * {
   Margin: 0;
@@ -26,7 +27,6 @@ a {
   font-size: 10px;
   border-radius: 3px;
   color: #FFFFFF;
-  border: solid black;
   background-color: green; }
   a:hover {
     text-decoration: none;
@@ -46,33 +46,32 @@ a {
   justify-items: center;
   justify-content: space-around; }
   .padre header {
-    grid-area: header; }
+    grid-area: header;
+    background-color: violet; }
   .padre .titulo1 {
     color: #000000;
     font-size: 20px;
     font-family: 'Hind Madurai', sans-serif;
-    text-align: center; }
+    text-align: center;
+  background-color: red; }
   .padre .txtDescr {
     color: #000000;
     font-size: 18px;
     font-family: 'Hind Madurai', sans-serif;
     text-align: center;
     width: 500px;
-    height: 100px; }
+    height: 100px;
+  background-color: red;}
+
   .padre .txtDescr2 {
     color: #000000;
     font-size: 18px;
     font-family: 'Hind Madurai', sans-serif;
     text-align: center;
     width: 1200px;
-    height: 100px; }
+    height: 100px; 
+  background-color: red;}
 
-.map {
-  border: solid #FFFFFF;
-  grid-area: map;
-  height: 250px;
-  width: 450px;
-  text-align: justify; }
 
 .video {
   grid-area: video;
@@ -122,97 +121,210 @@ a {
   width: 750px;
   height: 10px; }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 768px) {
   * {
     Margin: 0;
     padding: 0;
-    box-sizing: border-box; }
-  .padre {
-    height: 928px;
-    margin: 10px auto;
+    box-sizing: border-box; 
+  }
+
+  .position-relative {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 1.5fr;
-    grid-template-rows: 0.5fr 4fr 1fr 0.5fr;
+    grid-template-columns: 1fr 0.9fr 0.75fr;
+    grid-template-rows: 0.1fr 3fr 0.4fr 0.5fr;
     gap: 5px;
-    grid-template-areas: "header header header"  "video video map" "descrip descrip descrip"  "footerIndex footerIndex footerIndex";
-    justify-items: center; }
-    .padre header {
-      grid-area: header; }
-    .padre .titulo1 {
-      color: white;
+    grid-template-areas: 
+    "header header header"  
+    "video video fotos" 
+    "descrip descrip descrip"  
+    "footerIndex footerIndex footerIndex";
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: flex-start;
+  }
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+
+}
+.header-color{
+  background-color: blueviolet;
+}
+
+header {
+      grid-area: header;
+      width: 100%;
+      height: 100px;
+      display: block;
+      align-content: center;
+      justify-content: center;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+}
+
+.titulo1 {
+      color: blueviolet;
       font-size: 30px;
-      font-family: 'Hind Madurai', sans-serif;
-      text-align: center; }
-    .padre .txtDescr {
+      font-family: "Roboto Slab", serif;
+      text-align: center;
+
+}
+
+.txtDescr {
       color: #000000;
-      font-size: 18px;
-      font-family: 'Hind Madurai', sans-serif;
-      text-align: center; }
-    .padre .descrip {
+      font-size: 20px;
+      font-family: "Roboto Slab", serif;
+      text-align: center; 
+}
+
+ .descrip {
       grid-area: descrip;
       text-align: center;
-      width: 1200px;
-      height: 100px; }
+      font-family: "Roboto Slab", serif;
+      text-align: center; 
+      text-transform: uppercase;
+      font-size: 10px;
+      background-color: snow;;
+
+}
+
+
   li {
     text-align: right;
     color: #FFFFFF;
-    font-family: 'Hind Madurai', sans-serif;
-    font-size: 35px;
-    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: flex;
     margin: 5px;
-    padding: 5px; }
+    padding: 5px;
+    justify-content: center; 
+  align-content: center;
+}
+
+
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    align-content: center;
+    justify-content:center; }
   a {
     text-decoration: none;
     font-size: 30px;
-    border-radius: 5px;
     color: #FFFFFF;
-    border: solid #000000;
-    background-color: green; }
+    background-color: rgb(164, 13, 194); }
     a:hover {
       text-decoration: none;
-      font-size: 35px;
+      font-size: 30px;
       border-radius: 5px;
       color: #FFFFFF;
-      background-image: linear-gradient(to top, green, snow); }
+      background-image: linear-gradient(to top, rgb(221, 18, 211), snow); }
   .btnReserva {
     position: absolute;
     top: 450px;
     left: 1000px;
     width: 130px;
     height: 45px;
-    background-color: #08a508;
+    background-color: rgb(164, 13, 194);
     color: #FFFFFF;
     text-decoration: none;
-    border-radius: 12px;
     text-align: center;
     font-family: 'Hind Madurai', sans-serif;
-    font-size: 30px; }
-  .map {
-    border: solid #FFFFFF;
-    grid-area: map;
-    height: 400px;
-    width: 500px; }
-  .titPrincipal {
-    font-size: 45px;
-    text-align: center;
-    color: #000000;
-    margin: 20px;
-    padding: 10px;
-    width: 250px;
-    height: 200px;
-    position: absolute;
-    top: 180px;
-    left: 900px; }
+    font-size: 25px;
+}
+.fotos{
+  width: 500px;
+  height: 650px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  display: flex;
+  
+}
+.imgAni{
+  border-radius: 5px;
+}
+.imgAni:Hover{
+  border-radius: 20px;
+  transform: rotateY(180deg);
+  transition: transform .5s ease-in-out;
+  transform-style: preserve-3d;
+  background-size: cover;
+  background-position: center;
+  background-color: solid snow;
+}
   .footerIndex {
     grid-area: footerIndex;
-    width: 1750px;
-    height: 60px;
-    font-size: 15px; }
+    width: 100%;
+
+    font-size: 15px; 
+    background-color: white;
+  }
+  .footerUbicacion {
+    width: 100%;
+    height: 50px;
+    font-size: 16px; 
+    font-family: "Roboto Slab", serif;
+    text-align: left;
+    padding: 1%;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: blueviolet;
+  }
+  .footerDerecho {
+    width: 100%;
+    font-size: 15px; 
+    background-color: white;
+  }
   .video {
     grid-area: video;
     width: 1300px;
-    height: 600px; } }
+    height: 650px;
+} 
+.social-bar{
+        position: fixed;
+        top : 25px;
+        left: 75%;
+        font-size: 0.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 160px;
+        height: 60px;
+}
+    .icon{
+     
+      display: flex;
+      text-decoration: none;
+      font-size: 30px;
+    }
+    .icon-facebook2{
+      color: snow;
+    
+    }
+    .icon-instagram{
+      
+      color: rgb(255, 255, 255);
+    }
+  }
