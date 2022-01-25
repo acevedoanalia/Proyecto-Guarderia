@@ -41,13 +41,13 @@
 }
 .txtDescr{
     grid-area: txtDescr;
-    color: cornsilk;
-    font-size:15px;
+    color: black;
+    font-size:10px;
     font-family: 'Hind Madurai', sans-serif;
     text-align: center;
     width: 500px;
 }
-.alingImg1{
+.alingImg{
     grid-area: alingImg1;
     text-decoration: none;
     display: block;
@@ -58,52 +58,26 @@
     width: 380px;
     height: 200px;
 }
-.alingImg2{
-    grid-area: alingImg2;
-    text-decoration: none;
-    display: block;
-    color: snow;
-    font-family: 'Hind Madurai', sans-serif;
-    margin: 5px;
-    padding: 5px;
-    width: 380px;
-    height: 200px;
-   
+a{
+    text-decoration:none;
+    border-radius: 2px;
 }
-.alingImg3{
-    grid-area: alingImg3;
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-family: 'Hind Madurai', sans-serif;
-    margin: 5px;
-    padding: 5px;
-    width: 380px;
-    height: 200px;
-   
-}
-.alingImg1:hover{
-    transform: scale(2,2);
-}   
-.alingImg2:hover{
-transform: scale(2,2);
-}    
-.alingImg3:hover{
-   transform: scale(2,2);
-}
+
 
 .footerIndex{
     width: 750px;
     height: 70px;
 
 }
+
+
+
+
+
 @media only screen and  (min-width: 768px){
 
     body {
-        background-image: url(/images/fondo.jpg);
-      
-      
-      }
+        background-image: url(/images/fondo.jpg);}
 
 *{
     Margin:10;
@@ -115,15 +89,13 @@ transform: scale(2,2);
     height: 928px;
     margin: 10px auto;
     display: grid;
-    grid-template-columns:3fr 3fr 3fr;
-    grid-template-rows: 0.5fr 1fr 1fr 4fr 0.5fr;
+    grid-template-columns:3fr 4fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
     gap: 5px;
     grid-template-areas: 
-    "header header header" 
-    "txtDescr txtDescr txtDescr"
-    "tituloGal tituloGal tituloGal" 
-    "alingImg1 alingImg2 alingImg3" 
-    "footerIndex footerIndex footerIndex";
+    "header header" 
+    "txtDescr alingImg"
+    "footerIndex footerIndex";
     justify-content: center;
     justify-items: center;
 
@@ -137,45 +109,13 @@ a{
     border-radius: 4px;
 }
 
-.alingImg1{
-    grid-area: alingImg1;
+.alingImg{
+    grid-area: alingImg;
     text-decoration: none;
-    text-align: right;
-    color: snow;
-    font-family: 'Hind Madurai', sans-serif;
     margin: 5px;
     padding: 5px;
-    width: 400px;
-}
-.alingImg2{
-    grid-area: alingImg2;
-    text-decoration: none;
-    text-align: right;
-    color: snow;
-    font-family: 'Hind Madurai', sans-serif;
-    margin: 5px;
-    padding: 5px;
-    width: 400px;
-   
-}
-.alingImg3{
-    grid-area: alingImg3;
-    text-decoration: none;
-    text-align: right;
-    color: white;
-    font-family: 'Hind Madurai', sans-serif;
-    margin: 5px;
-    padding: 5px;
-    width: 400px;
-}
-.alingImg1:hover{
-    transform: scale(2,2);
-}   
-.alingImg2:hover{
-transform: scale(2,2);
-}    
-.alingImg3:hover{
-   transform: scale(2,2);
+    width: 1200px;
+    height: 750px;
 }
 
 .titulo1{
@@ -185,16 +125,6 @@ font-size:30px;
 font-family: 'Hind Madurai', sans-serif;
 
 }
-
-.tituloGal{
-    grid-area: tituloGal;
-    color:black;
-    font-size:30px;
-    font-family: 'Hind Madurai', sans-serif;
-    animation: tituloGal;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    }
 
 @keyframes tituloGal {
     0%{
@@ -214,15 +144,15 @@ grid-area: txtDescr;
 color: black;
 font-size:18px;
 font-family: 'Hind Madurai', sans-serif;
-text-align: center;
-width: 1200px;
+text-align: left;
+width: 700px;
+height: 750px;
+margin: 2px;
+padding: 2%;
+background-color: snow;
 }
-
 .footerIndex{
-    position: absolute;
-    top: 900px;
-    left: 50px;
-    width: 1750px;
+    width: 100%;
     height: 70px;
 
 }
