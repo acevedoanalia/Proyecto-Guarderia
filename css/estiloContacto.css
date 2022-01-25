@@ -157,7 +157,7 @@ font-family: 'Hind Madurai', sans-serif;
 .footerIndex{
     grid-area: footerIndex;
     font-size: 10px;
-    width: 1750px;
+    width: 100%;
     height: 10px;
 }
 }

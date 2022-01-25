@@ -36,7 +36,7 @@ header{
 
  .liTarifas {
     text-align: left;
-    color:white;
+    color:black;
     font-family: 'Hind Madurai', sans-serif;
     font-size: 15px;
     margin: 5px;
@@ -189,6 +189,7 @@ header{
     padding: 5px;
     width: 650px;
     height: 350px;
+    color: black;
 
 }
 
@@ -206,6 +207,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     text-align: left;
+    color: black;
 
 }
 a{

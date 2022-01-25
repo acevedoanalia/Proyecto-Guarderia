@@ -52,18 +52,15 @@ a{
     color: snow;
     font-family: 'Hind Madurai', sans-serif;
     display: block;
-    margin: 5px;
-    padding: 5px;
     width: 400px;
     height: 600px;
-
-
-    animation-name: movimiento;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 1s;
+    border: 1px solid black;
+    border-radius: 2px;
    
+}
+.alingImg1:hover{
+    transform: rotateX(5deg);
+    border: 5px groove rgb(148, 28, 228);
 }
 .alingImg2{
     grid-area: alingImg2;
@@ -145,6 +142,8 @@ font-family: 'Hind Madurai', sans-serif;
 
 }
 
+
+
 @media only screen and  (min-width: 768px){
    
 *{
@@ -153,139 +152,65 @@ font-family: 'Hind Madurai', sans-serif;
         box-sizing: border-box; }
 header{
         grid-area: header;}
-
 .padreNosotros{  
     height: 100%;
     margin: 10px auto;
     display: grid;
     grid-template-columns: 3fr 5fr;
-    grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 3.5fr 3.5fr 0.5fr;
     gap: 10px;
     grid-template-areas: 
     "header header" 
     "alingImg1 txtNosotros"
     "alingImg2 txtNosotros"
-    "alingImg2 txtNosotros"
     "footerIndex footerIndex";
     justify-content: center;
-    align-items: end;}
+    align-items: center;
+    justify-items: center;}
 
-li {
-            text-align: right;
-            color:white;
-            font-family: 'Hind Madurai', sans-serif;
-            font-size: 25px;
-            display: inline-block;
-            align-items: center;
-            margin: 5px;
-            padding: 5px;
-}
-ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        
-        
-        }
-        a{
-            text-decoration:none;
-            font-size: 25px;
-            border-radius: 5px;
-            color: white;
-          
-        }
-        a:hover{
-            text-decoration:none;
-            font-size: 25px;
-            border-radius: 5px;
-            color: white;
-       
-        }
-        
-        .liIcon{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        
-            text-decoration: none;
-            text-align: right;
-            color: snow;
-            font-family: 'Hind Madurai', sans-serif;
-            display: inline-block;
-            margin: 5px;
-            padding: 5px;
-           
-        }
    
-        .txtNosotros{
-            grid-area: txtNosotros;
-            color: white;
-            font-size:18px;
-            font-family: 'Hind Madurai', sans-serif;
-            text-align: left;
-     
-            display: flex;
-            width: 850px;
-      
+ .txtNosotros{
+    grid-area: txtNosotros;
+    color: white;
+    font-size:20px;
+    font-family: "Roboto Slab", serif;
+    text-align: left;
+    align-self: left;
+    width: 1000px;
+    height: 650px;
+    background-color: snow;}
 
-        }
+.titulo1{
+    color: white;
+    font-size:30px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;}
 
+.txtDescr{ 
+    color: black;
+    font-size:18px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: left;
+    padding: 2%;
+    width: 700px;
+    height: 200px;}
     
-        .titulo1{
-            color: white;
-            font-size:30px;
-            font-family: 'Hind Madurai', sans-serif;
-            text-align: center;
-           
-        }
-
-    
-        .txtDescr{
-            
-            color: black;
-            font-size:18px;
-            font-family: 'Hind Madurai', sans-serif;
-            text-align: center;
-        }
-    
-        .titPrincipal{
-               
-                font-size: 45px;
-                text-align: center;
-                color:black;
-                margin: 20px;
-                padding: 10px;
-                width: 250px;
-                height: 200px;
-                position: absolute;
-                top: 180px;
-                left: 900px;
-                
-        }
+.titPrincipal2{
+    font-size: 30px;
+    text-align: left;
+    color:black;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 50px;}
 .alingImg1{
             grid-area: alingImg1;
-            text-decoration: none;
-            text-align: right;
-            color: snow;
-            font-family: 'Hind Madurai', sans-serif;
             display: inline-block;
             margin: 2px;
             padding: 5px;
-            width: 250px;
-            height: 320px;
+            width: 550px;
+            height: 300px;
            
-}
-.alingImg2{
-            grid-area: alingImg2;
-            text-decoration: none;
-            text-align: right;
-            color: snow;
-            font-family: 'Hind Madurai', sans-serif;
-            display: inline-block;
-            margin: 2px;
-            padding: 5px;
-            width: 250px;
-            height: 320px;           
 }
 
 .footerIndex{
