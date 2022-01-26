@@ -134,25 +134,11 @@ width: 500px;
 
 @media only screen and  (min-width: 800px){
 
-    body {
-        background-image: url(/images/fondo.jpg);
-      
-      
-      }
-
-*{
-    Margin:10;
-    padding:10;
-    box-sizing: border-box;
- }
-
- .padreTarifas{
+ .containerTarifas{
   
-    height: 928px;
-    margin: 10px auto;
     display: grid;
     grid-template-columns: 2fr 5fr;
-    grid-template-rows: 0.5fr 5fr 5fr 0.5fr;
+    grid-template-rows: 0.5fr 3fr 3fr 0.5fr;
     gap: 5px;
     grid-template-areas: 
     "header header" 
@@ -274,8 +260,26 @@ height: 750px;
 text-align: left;
 }
 
-.footerIndex{
+.footerIndex {
+    grid-area: footerIndex;
     width: 100%;
-    height: 55px;
-}
+    font-size: 15px; 
+    background-color: white;}
+
+.footerUbicacion {
+    width: 100%;
+    height: 50px;
+    font-size: 16px; 
+    font-family: "Roboto Slab", serif;
+    text-align: left;
+    padding: 1%;
+    justify-content: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, rgb(77, 0, 128), rgb(187, 39, 245), rgb(153, 126, 216) );
+  }
+
+.footerDerecho {
+    width: 100%;
+    font-size: 15px; 
+    background-color: white;}
 }

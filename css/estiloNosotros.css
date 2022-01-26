@@ -146,15 +146,8 @@ font-family: 'Hind Madurai', sans-serif;
 
 @media only screen and  (min-width: 768px){
    
-*{
-        Margin:0;
-        padding:0;
-        box-sizing: border-box; }
-header{
-        grid-area: header;}
-.padreNosotros{  
-    height: 100%;
-    margin: 10px auto;
+
+.containerNosotros{
     display: grid;
     grid-template-columns: 3fr 5fr;
     grid-template-rows: 0.5fr 3.5fr 3.5fr 0.5fr;
@@ -168,23 +161,15 @@ header{
     align-items: center;
     justify-items: center;}
 
-   
  .txtNosotros{
     grid-area: txtNosotros;
-    color: white;
     font-size:20px;
     font-family: "Roboto Slab", serif;
-    text-align: left;
-    align-self: left;
     width: 1000px;
     height: 650px;
+    text-align: left;
+    align-self: left;
     background-color: snow;}
-
-.titulo1{
-    color: white;
-    font-size:30px;
-    font-family: "Roboto Slab", serif;
-    text-align: center;}
 
 .txtDescr{ 
     color: black;
@@ -203,20 +188,38 @@ header{
     padding: 10px;
     width: 250px;
     height: 50px;}
+
 .alingImg1{
-            grid-area: alingImg1;
-            display: inline-block;
-            margin: 2px;
-            padding: 5px;
-            width: 550px;
-            height: 300px;
-           
+    grid-area: alingImg1;
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    width: 550px;
+    height: 300px;
+    border-radius: 1px;
 }
 
-.footerIndex{
+.footerIndex {
     grid-area: footerIndex;
-    width:100%;
-    height: 40px;
-    font-size: 15px;}
+    width: 100%;
+    font-size: 15px; 
+    background-color: white;}
+
+.footerUbicacion {
+    width: 100%;
+    height: 50px;
+    font-size: 16px; 
+    font-family: "Roboto Slab", serif;
+    text-align: left;
+    padding: 1%;
+    justify-content: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, rgb(77, 0, 128), rgb(187, 39, 245), rgb(153, 126, 216) );
+  }
+
+.footerDerecho {
+    width: 100%;
+    font-size: 15px; 
+    background-color: white;}
      
 }
