@@ -103,27 +103,15 @@ a{
   
    
 }
-.alingImg2{
-    grid-area: alingImg2;
-    text-decoration: none;
-    text-align: right;
-    color: snow;
-    font-family: 'Hind Madurai', sans-serif;
-    display: block;
-    margin: 5px;
-    padding: 5px;
-    width: 400px;
-   
-}
 .titulo1{
-color:white;
+color:rgb(0, 0, 0);
 font-size:20px;
 font-family: 'Hind Madurai', sans-serif;
 
 }
 .txtDescrTarifas{
 grid-area: txtDescrTarifas;
-color: white;
+color: rgb(0, 0, 0);
 font-size:18px;
 font-family: 'Hind Madurai', sans-serif;
 width: 500px;
@@ -137,6 +125,12 @@ width: 500px;
     height: 10px;
 }
 
+
+.table{
+    background-color: pink;
+    border:rgb(0, 0, 0);
+
+}
 
 @media only screen and  (min-width: 800px){
 
@@ -163,7 +157,7 @@ width: 500px;
     grid-template-areas: 
     "header header" 
     "alingImg1 txtDescrTarifas"
-    "alingImg2 itemsTarifas"
+    "alingImg1 txtDescrTarifas"
     "footerIndex footerIndex";
     align-items: center;
     justify-content: center;
@@ -239,68 +233,49 @@ a:hover{
 }
 .alingImg1{
     grid-area: alingImg1;
-    text-decoration: none;
-    text-align: right;
-    color: snow;
-    font-family: 'Hind Madurai', sans-serif;
     display: inline-block;
     margin: 5px;
-    padding: 5px;
-    width: 250px;
-    height: 320px; 
-}
-.alingImg2{
-    grid-area: alingImg2;
-    text-decoration: none;
-    text-align: right;
-    color: snow;
-    font-family: 'Hind Madurai', sans-serif;
-    display: inline-block;
-    margin: 5px;
-    padding: 5px;
-    width: 250px;
-    height: 320px;
+    padding: 2%;
+    width: 550px;
+    height: 350px;
+    align-self: right;
    
 }
-
-.alingParr{
-    text-decoration: none;
-    text-align: left;
-    color: snow;
-    font-family: 'Hind Madurai', sans-serif;
-    display: inline-block;
-    margin: 15px;
-    padding: 15px;
-    font-size: 15;
-    position: absolute;
-    top: 100px;
-    left: 500px;
-    width: 650px;
-    height: 650px;
-}
-
-
 .titulo1{
-color:white;
+color:rgb(0, 0, 0);
 font-size:30px;
 font-family: 'Hind Madurai', sans-serif;
+text-align: left;
 
+}
+.table{
+   
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    border-color: black;
+    border:10px;
+
+}
+.cabecera{
+    color: yellow;
+    background-color: purple;
+    width: 100px;
+   
 }
 .txtDescrTarifas{
 grid-area: txtDescrTarifas;
-color: white;
+background-color:white;
+color: rgb(0, 0, 0);
 font-size:26px;
 font-family: 'Hind Madurai', sans-serif;
-width: 650px;
-height: 250px;
+width: 1250px;
+height: 750px;
 text-align: left;
 }
 
 .footerIndex{
-    position: absolute;
-    top: 890px;
-    left: 50px;
-    width: 1750px;
+    width: 100%;
     height: 55px;
 }
 }
